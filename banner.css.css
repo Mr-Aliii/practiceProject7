@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #052A49;
+}
+
+.logo-icon {
+    width: 28px;
+    height: 28px;
+    background-color: #0066cc;
+    border-radius: 6px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+}
+
+.btn-install {
+    background-color: #052A49;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.left-content {
+    flex: 1;
+    padding-right: 60px;
+}
+
+.left-content h1 {
+    font-size: 54px;
+    color: #052A49;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.left-content p {
+    color: #777;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.store-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.store-btn {
+    height: 45px;
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 968px) {
+    header { padding: 20px 5%; }
+    .container { flex-direction: column; text-align: center; margin: 30px auto; }
+    .left-content { padding-right: 0; margin-bottom: 50px; }
+    .left-content h1 { font-size: 40px; }
+    .store-buttons { justify-content: center; }
+    nav { display: none; }
+}
